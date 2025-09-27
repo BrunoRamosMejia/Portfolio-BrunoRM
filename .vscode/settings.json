@@ -1,0 +1,41 @@
+{
+  // ...existing code...
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        // Cambia el color de las etiquetas HTML/JSX
+        "scope": [
+          "entity.name.tag.html",
+          "entity.name.tag.jsx"
+        ],
+        "settings": {
+          "foreground": "#FF8800" // Cambia este color a tu preferencia
+        }
+      },
+      {
+        // Cambia el color de las propiedades (como title, description, imgUrl)
+        "scope": [
+          "variable.other.property.js",
+          "variable.other.property.ts",
+          "meta.object-literal.key.js",
+          "meta.object-literal.key.ts"
+        ],
+        "settings": {
+          "foreground": "#00BFFF" // Cambia este color a tu preferencia
+        }
+      },
+      {
+        // Cambia el color de la palabra clave 'new'
+        "scope": [
+          "keyword.operator.new.js",
+          "keyword.operator.new.ts"
+        ],
+        "settings": {
+          "foreground": "#FF00FF" // Cambia este color a tu preferencia
+        }
+      }
+    ]
+  },
+  "liveServer.settings.port": 5501
+  // ...existing code...
+}

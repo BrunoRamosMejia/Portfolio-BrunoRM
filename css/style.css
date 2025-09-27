@@ -1,0 +1,66 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.cabin-font {
+    font-family: 'Cabin', sans-serif;
+}
+
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid rgb(116, 116, 116);
+    white-space: nowrap;
+    animation:
+        typing 2.5s steps(25, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0ch; }
+    to { width: 18ch; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
+
+@keyframes metallic-reflect {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.metallic {
+    background: linear-gradient(90deg, #4d869f 10%, #174257 40%, #548cb2 60%, #22526a 90%);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: #94a3b8;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 1px 2px #fff2, 0 2px 8px #b0bec544;
+    animation: metallic-reflect 2.5s linear infinite;
+}
+
+@keyframes metallic-reflect-soft {
+    0% {
+        background-position: -120% 0;
+    }
+    100% {
+        background-position: 120% 0;
+    }
+}
+
+.metallic-soft {
+    background: linear-gradient(90deg, #334155 0%, #48607c 50%, #334155 100%);
+    background-size: 200% 100%;
+    animation: metallic-reflect-soft 6s linear infinite;
+}
+
+.tecnologias-h {
+    height: 80vh;
+}

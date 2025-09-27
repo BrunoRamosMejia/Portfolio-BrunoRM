@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Iniciar Tailwind con: npm run tailwind -->
+    <link href="./css/output.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" size="48x48" href="/images/brunoIcon48px.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>FSDev. | Bruno Ramos Mejia</title>
+
+</head>
+<body class="relative min-h-screen h-full w-full bg-slate-950 z-10">
+    <!-- ========== Fondo ========== -->
+    <div class="fixed inset-0 w-full h-full bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] z-10"></div>
+    <!-- ========== Particulas ========== -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <div id="particles-js" class="fixed inset-0 w-full h-full z-10"></div>
+    <script>
+        particlesJS.load('particles-js', './misc/particlesjs-config.json');
+    </script>
+
+    <!-- ========== NAV BAR ========== -->
+
+    <nav class="grid grid-cols-9 grid-rows-1 h-22 gap-3 bg-slate-900 relative z-20 border-2 border-slate-800">
+        <img class="mx-auto my-auto max-h-full object-contain col-span-1" src="/images/brunoIcon50px.png">
+        <a href="#" class="mx-auto my-auto text-white bg-[#23395d] outline-1 outline-slate-800 shadow-md/30 rounded-full py-3 px-4 col-start-4 hover:bg-slate-500 hover:outline-2 hover:outline-white hover:shadow-white">Sobre Mi</a>
+        <a href="#proyectos" class="mx-auto my-auto text-white bg-[#23395d] outline-1 outline-slate-800 shadow-md/30 rounded-full py-3 px-4 hover:bg-slate-500 hover:outline-2 hover:outline-white hover:shadow-white">Proyectos</a>
+        <a href="#tecnologias" class="mx-auto my-auto text-white bg-[#23395d] outline-1 outline-slate-800 shadow-md/30 rounded-full py-3 px-4 hover:bg-slate-500 hover:outline-2 hover:outline-white hover:shadow-white">Tecnologias</a>
+    </nav>
+
+    <!-- ========== Sobre Mi ========== -->
+
+    <section class="grid grid-cols-6 grid-rows-5 w-5/8 h-2/3 mx-auto my-20 bg-slate-900 relative z-20 shadow-[0_0_24px_4px_rgba(56,189,248,0.18)]">
+        <div class="col-span-4 col-start-1 row-start-2 text-center content-center">
+            <h1 class="text-white text-5xl font-bold py-3">Hola,
+                <span class="text-slate-400 text-5xl metallic">Soy Bruno!</span>
+            </h1>
+            <h2 class="mx-20 text-center font-bold cabin-font text-white text-lg ">
+                <span class="typewriter">Desarrollador Fullstack</span>
+            </h2>
+        </div>
+        <p class="text-slate-300 text-base col-span-4 col-start-1 row-start-3 text-center mx-2 my-2 animate-pulse">
+            Desarrollador autodidacta, en constante aprendizaje y con gran motivación por aportar soluciones creativas. Busco mi primera oportunidad profesional para seguir creciendo y contribuir en el mundo tecnológico.
+        </p>
+        <img class="col-start-5 col-span-2 row-start-1 row-span-5 h-3/3 py-15 px-auto mx-auto mask-b-from-80%" src="images/brunoAvatar.png">
+        <div class="col-start-1 col-span-4 row-start-4 row-span-1 flex flex-row justify-around mx-auto my-8">
+            <a href="https://www.linkedin.com/in/nelson-bruno-ramos-mejia" class="mx-2 py-3 px-4 bg-slate-700 text-white flex items-center gap-2 rounded-3xl hover:bg-slate-600 transition metallic-soft">
+                <!-- LinkedIn Heroicon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-700" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.867-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.036 0 3.599 2.001 3.599 4.601v5.595z"/>
+                </svg>
+                LinkedIn
+            </a>
+            <a href="https://github.com/BrunoRamosMejia" class="mx-2 py-3 px-4 bg-slate-700 text-white flex items-center gap-2 rounded-3xl hover:bg-slate-600 transition metallic-soft">
+                <!-- GitHub Heroicon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.371.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                </svg>
+                GitHub
+            </a>
+            <a href="mailto:nelson.ramosmejia@gmail.com" class="mx-2 py-3 px-4 bg-slate-700 text-white flex items-center gap-2 rounded-3xl hover:bg-slate-600 transition metallic-soft">
+                <!-- Email Heroicon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+                Email
+            </a>
+        </div>
+    </section>
+
+    <!-- ========== Proyectos ========== -->
+
+    <section id="proyectos" class="relative z-20">
+        <div class="mt-5 flex flex-col items-center">
+            <h1 class="text-3xl font-bold text-white mb-2">Proyectos</h1>
+            <p class="text-slate-300 text-center max-w-xl">Estos son algunos proyectos realizados durante mis cursos y carrera, donde apliqué distintas tecnologías y enfoques de desarrollo web y backend.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-8 w-[740px] mx-auto my-20">
+            <!-- Proyecto 1 -->
+            <article class="bg-slate-900 shadow-[0_0_24px_4px_rgba(56,189,248,0.18)] rounded-3xl border border-transparent flex flex-col items-center p-6 col-span-1">
+                <a href="https://github.com/BrunoRamosMejia/Ludoteca-central-ids"><img src="images/ludoteca.png" alt="Proyecto Flask" class="h-44 object-contain rounded-2xl shadow-lg mb-2 transition-transform duration-200 ease-in-out hover:scale-105"></a>
+                <h3 class="text-white text-xl font-bold mb-2 text-center">Ludoteca E-commerce</h3>
+                <p class="text-slate-300 text-base">Proyecto final Integrador IDS, Frontend y Backend construidos en Python, Flask. Base de datos MySQL (MariaDB), despliegue de contenedores en Docker.</p>
+            </article>
+            <!-- Proyecto 2 -->
+            <article class="bg-slate-900 shadow-[0_0_24px_4px_rgba(56,189,248,0.18)] rounded-3xl border border-transparent flex flex-col items-center p-6 col-span-1">
+                <a href=""><img src="images/portafolio.png" alt="Proyecto Portafolio" class="h-44 object-contain rounded-2xl shadow-lg mb-2 transition-transform duration-200 ease-in-out hover:scale-105"></a>
+                <h3 class="text-white text-xl font-bold mb-2 text-center">Portafolio Web</h3>
+                <p class="text-slate-300 text-base">Sitio web personal hecho con HTML, Tailwind y JavaScript, mostrando proyectos, tecnologías y contacto profesional.</p>
+            </article>
+            <!-- Proyecto 3 -->
+            <article class="bg-slate-900 shadow-[0_0_24px_4px_rgba(56,189,248,0.18)] rounded-3xl border border-transparent flex flex-col items-center p-6 col-span-2">
+                <a href=""><img src="images/turnosmedicos.png" alt="Proyecto Docker" class="h-52 object-contain rounded-2xl shadow-lg mb-2 transition-transform duration-200 ease-in-out hover:scale-105"></a>
+                <h3 class="text-white text-xl font-bold mb-2 text-center">Gestion de Turnos | Full stack </h3>
+                <p class="text-slate-300 text-base">App web de Gestion de turnos. Frontend hecho con React y vite como herramienta de Empaquetado y Desarrollo. Backend construido con NodeJs y Typescritp, utilizando el framework Express para manejar las rutas y peticiones HTTP, PostgreSQL para Base de datos y para el acceso a esta TypeORM</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- ========== Tecnologias ========== -->
+
+    <section id="tecnologias" class="flex flex-col w-[740px] h-[900px] mx-auto relative z-20">
+        <div class="mb-6 flex flex-col items-center">
+            <h1 class="text-4xl font-bold text-white mb-2">Tecnologias</h1>
+            <p class="text-slate-300 text-center max-w-xl">Estas son algunas de las tecnologías que manejo y utilizo en mis proyectos:</p>
+        </div>
+        <div class="grid grid-cols-2 grid-rows-2 gap-8">
+           <!-- Front -->
+                <article class="text-white text-xl font-semibold text-center bg-[#070707] shadow-[0_0_32px_8px_rgba(0,0,0,0.45)] rounded-3xl border border-transparent">
+                <h3>Frontend</h3>
+                <ul class="grid grid-cols-3 gap-3">
+                    <li class="flex flex-col items-center">
+                        <img src="/images/html.png" alt="HTML" class="h-13 mb-1">
+                        <span class="text-xs">HTML</span>
+                    </li>
+                    <li class="flex flex-col items-center">
+                        <img src="/images/css.png" alt="CSS" class="h-13 mb-1">
+                        <span class="text-xs">CSS</span>
+                    </li>
+                    <li class="flex flex-col items-center">
+                        <img src="/images/js.png" alt="JavaScript" class="h-13 mb-1">
+                        <span class="text-xs">JS</span>
+                    </li>
+                    <li class="flex flex-col items-center">
+                        <img src="/images/tailwindcss.svg" alt="Tailwind" class="h-11 mb-1">
+                        <span class="text-xs">Tailwind</span>
+                    </li>
+                    <li class="flex flex-col items-center">
+                        <img src="/images/react.png" alt="React" class="h-11 mb-1">
+                        <span class="text-xs">React</span>
+                    </li>
+                    <li class="flex flex-col items-center">
+
+                    </li>
+                    <li class="flex flex-col items-center">
+
+                    </li>
+                </ul>
+            </article>
+            <!-- Back -->
+                <article class="text-white text-xl font-semibold text-center bg-[#070707] shadow-[0_0_32px_8px_rgba(0,0,0,0.45)] rounded-3xl border border-transparent">
+                <h3>Backend</h3>
+                <ul class="grid grid-cols-3 gap-3">
+                    <li class="flex flex-col items-center">
+                        <img src="/images/python.png" alt="Python" class="h-13 mb-1">
+                        <span class="text-xs">Python</span>
+                    </li>
+                    <li class="flex flex-col items-center">
+                        <img src="/images/mysql.png" alt="MySQL" class="h-13 mb-1">
+                        <span class="text-xs">MySQL</span>
+                    </li>
+                    <li class="flex flex-col items-center">
+                        <img src="/images/mariadb.png" alt="MariaDB" class="h-13 mb-1">
+                        <span class="text-xs">MariaDB</span>
+                    </li>
+                    <li class="flex flex-col items-center">
+                        <img src="/images/flask.png" alt="Flask" class="h-13 mb-1">
+                        <span class="text-xs">Flask</span>
+                    </li>
+                    <li class="flex flex-col items-center">
+
+                    </li>
+                </ul>
+            </article>
+            <!-- Herramientas -->
+                <article class="text-white text-xl font-semibold text-center bg-[#070707] shadow-[0_0_32px_8px_rgba(0,0,0,0.45)] rounded-3xl border border-transparent">
+                <h3>Herramientas</h3>
+                <ul class="grid grid-cols-3 gap-3">
+                    <li class="flex flex-col items-center">
+                        <img src="/images/git.png" alt="Git" class="h-13 mb-1">
+                        <span class="text-xs">Git</span>
+                    </li>
+                    <li class="flex flex-col items-center">
+                        <img src="/images/github.png" alt="Github" class="h-13 mb-1">
+                        <span class="text-xs">GitHub</span>
+                    </li>
+                    <li class="flex flex-col items-center">
+                        <img src="/images/bash.png" alt="Bash" class="h-13 mb-1">
+                        <span class="text-xs">Bash</span>
+                    </li>
+                    <li class="flex flex-col items-center">
+                        <img src="/images/vsc.png" alt="Visual Studio Code" class="h-13 mb-1">
+                        <span class="text-xs">Visual Studio Code</span>
+                    </li>
+                    <li class="flex flex-col items-center">
+                        <img src="images/postman.png" alt="Postman" class="h-13 mb-1">
+                        <span class="text-xs">Postman</span>
+                    </li>
+                    <li class="flex flex-col items-center">
+                        <img src="images/nodejs.png" alt="NodeJs" class="h-13 mb-1">
+                        <span class="text-xs">NodeJs</span>
+                    </li>
+                    <li class="flex flex-col items-center">
+                        <img src="images/docker.png" alt="Docker" class="h-13 mb-1">
+                        <span class="text-xs">Docker</span>
+                    </li>
+
+                </ul>
+            </article>
+            <!-- Caja 4 -->
+                <article class="text-white text-xl font-semibold text-center bg-[#070707] shadow-[0_0_32px_8px_rgba(0,0,0,0.45)] rounded-3xl border border-transparent">
+                <h3>Aprendiendo</h3>
+                <ul class="grid grid-cols-3 gap-3">
+                    <li class="flex flex-col items-center">
+                        <img src="images/nestjs.png" alt="NestJs" class="h-13 mb-1">
+                        <span class="text-xs">NestJs</span>
+                    </li>
+                    <li class="flex flex-col items-center">
+                        <img src="images/k8s.png" alt="Kubernetes" class="h-13 mb-1">
+                        <span class="text-xs">Kubernetes</span>
+                    </li>
+                    <li class="flex flex-col items-center">
+                        <img src="/images/typescript.png" alt="TypeScript" class="h-13 mb-1">
+                        <span class="text-xs">TypeScript</span>
+                    </li>
+                    <li class="flex flex-col items-center">
+                        <img src="/images/react.png" alt="PostgreSQL" class="h-13 mb-1">
+                        <span class="text-xs">PostgreSQL</span>
+                    </li>
+                    <li class="flex flex-col items-center">
+
+                    </li>
+                </ul>
+            </article>
+        </div>    
+    </section>
+
+    <!-- ========== Footer ========== -->
+
+    <!-- <footer class="grid grid-cols-4 w-auto h-1/5 mx-auto my-20 bg-slate-900 relative z-20 border-t-2 border-t-slate-800">
+
+    </footer> -->
+
+</body>
+</html>
