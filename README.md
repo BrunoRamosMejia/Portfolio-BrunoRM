@@ -4,7 +4,7 @@ Este es el repositorio de mi portafolio personal como desarrollador Fullstack. A
 
 Desplegado en: https://brunormdev.netlify.app
 
-## 🚀 Tecnologías principales
+## 🚀 Mis Tecnologías principales
 
 - **Frontend:** HTML, CSS, TailwindCSS, JavaScript, React
 - **Backend:** Python, Flask, Node.js, Express, TypeScript, PostgreSQL, MariaDB, MySQL
