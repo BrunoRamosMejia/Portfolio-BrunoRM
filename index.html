@@ -13,19 +13,20 @@
     <title>FSDev. | Bruno Ramos Mejia</title>
 
 </head>
-<body class="relative min-h-screen h-full w-full bg-slate-950 z-10">
+<body class="relative min-h-screen h-full w-full">
     <!-- ========== Fondo ========== -->
-    <div class="fixed inset-0 w-full h-full bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] z-10"></div>
+    <div class="fixed inset-0 w-full h-full bg-[url('/images/background.jpeg')] bg-cover bg-center bg-no-repeat z-10 pointer-events-none"></div>
+    <div class="fixed inset-0 w-full h-full bg-slate-900/20 z-10 pointer-events-none"></div>
     <!-- ========== Particulas ========== -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-    <div id="particles-js" class="fixed inset-0 w-full h-full z-10"></div>
+    <div id="particles-js" class="fixed inset-0 w-full h-full z-20"></div>
     <script>
         particlesJS.load('particles-js', './misc/particlesjs-config.json');
     </script>
 
     <!-- ========== NAV BAR ========== -->
 
-    <nav class="sm:grid sm:grid-cols-9 sm:grid-rows-1 sm:h-22 sm:gap-3 bg-slate-900 relative z-20 border-2 border-slate-800">
+    <nav class="sm:grid sm:grid-cols-9 sm:grid-rows-1 sm:h-22 sm:gap-3 bg-slate-900 relative border-2 border-slate-800 z-30">
         <img class="sm:mx-auto sm:my-auto sm:max-h-full sm:object-contain sm:col-span-1 mx-auto my-auto max-h-full object-contain col-span-1" src="/images/brunoIcon50px.png">
         <a href="#" class="sm:mx-auto sm:my-auto sm:text-white sm:bg-[#23395d] sm:outline-1 sm:outline-slate-800 sm:shadow-md/30 sm:rounded-full sm:py-3 sm:px-4 sm:col-start-4 sm:hover:bg-slate-500 sm:hover:outline-2 sm:hover:outline-white sm:hover:shadow-white hidden sm:inline-block">Sobre Mi</a>
         <a href="#proyectos" class="sm:mx-auto sm:my-auto sm:text-white sm:bg-[#23395d] sm:outline-1 sm:outline-slate-800 sm:shadow-md/30 sm:rounded-full sm:py-3 sm:px-4 sm:hover:bg-slate-500 sm:hover:outline-2 sm:hover:outline-white sm:hover:shadow-white hidden sm:inline-block">Proyectos</a>
@@ -34,199 +35,271 @@
 
     <!-- ========== Sobre Mi ========== -->
 
-    <section class="grid grid-cols-2  w-9/10 h-[700px] my-8 sm:grid-cols-6 sm:grid-rows-5 sm:w-5/8 sm:h-2/3 mx-auto sm:my-20 bg-slate-900 relative z-20 shadow-[0_0_24px_4px_rgba(56,189,248,0.18)]">
+    <section class="grid grid-cols-2 rounded-2xl bg-slate-900/90 w-9/10 h-[700px] my-8 sm:grid-cols-6 sm:grid-rows-5 sm:w-4/8 sm:h-2/3 mx-auto sm:my-20 relative
+     z-30 shadow-[0_0_24px_4px_rgba(56,189,248,0.18)]">
         <div class="col-span-2 sm:col-span-4 sm:col-start-1 sm:row-start-2 text-center content-center">
             <h1 class="text-white sm:text-5xl text-3xl font-bold py-3">Hola,
                 <span class="text-slate-400 sm:text-5xl text-4xl metallic">Soy Bruno!</span>
             </h1>
-            <h2 class="sm:mx-20 sm:text-center sm:font-bold cabin-font text-white sm:text-lg ">
+            <h2 class="sm:mx-20 sm:text-center sm:font-bold cabin-font text-white sm:text-2xl ">
                 <span class="typewriter">Desarrollador Fullstack</span>
             </h2>
         </div>
-        <p class="col-span-2 text-slate-300 text-base sm:col-span-4 sm:col-start-1 sm:row-start-3 text-center sm:mx-2 sm:my-2 animate-pulse">
+        <p class="col-span-2 text-slate-300 text-lg sm:col-span-4 sm:col-start-1 sm:row-start-3 text-center sm:mx-2 sm:my-2 animate-pulse">
             Desarrollador autodidacta, en constante aprendizaje y con gran motivación por aportar soluciones creativas. Busco mi primera oportunidad profesional para seguir creciendo y contribuir en el mundo tecnológico.
         </p>
         <img class="col-span-2 h-auto w-4/6 sm:col-start-5 sm:col-span-2 sm:row-start-1 sm:row-span-5 sm:my-auto sm:h-auto sm:py-15 sm:px-auto mx-auto mask-b-from-80%" src="images/brunoAvatar.png">
         <div class="col-span-2 sm:col-start-1 sm:col-span-4 sm:row-start-4 sm:row-span-1 flex flex-row justify-around mx-auto my-8">
-            <a href="https://www.linkedin.com/in/nelson-bruno-ramos-mejia" class="mx-2 py-2 px-2 sm:py-3 sm:px-4 bg-slate-700 text-white flex items-center gap-2 rounded-3xl hover:bg-slate-600 transition metallic-soft">
+            <a href="https://www.linkedin.com/in/nelson-bruno-ramos-mejia" target="_blank" class="relative mx-2 py-2 px-2 sm:py-3 sm:px-4 bg-slate-700 group-hover:text-white text-white flex items-center gap-2 rounded-3xl border-1 overflow-hidden group cursor-pointer">
                 <!-- LinkedIn Heroicon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-700" fill="currentColor" viewBox="0 0 24 24">
+                <span class="absolute inset-0 w-auto h-auto bg-slate-950 transform scale-x-0 origin-left rounded-tr-full
+                rounded-br-full group-hover:scale-x-100 transition-transform duration-800 ease-in-out z-10"></span>
+                <span class="absolute inset-0 w-auto h-auto bg-slate-950 transform scale-x-0 origin-right rounded-tl-full
+                group-hover:scale-x-100 transition-transform duration-800 ease-in-out z-10"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="relative h-6 w-6 text-blue-700 group-hover:text-white transition-colors duration-800 z-20" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.867-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.036 0 3.599 2.001 3.599 4.601v5.595z"/>
                 </svg>
-                LinkedIn
+                <span class="relative z-20">LinkedIn</span>
             </a>
-            <a href="https://github.com/BrunoRamosMejia" class="mx-2 py-2 px-2 sm:py-3 sm:px-4 bg-slate-700 text-white flex items-center gap-2 rounded-3xl hover:bg-slate-600 transition metallic-soft">
+            <a href="https://github.com/BrunoRamosMejia" target="_blank" class="relative mx-2 py-2 px-2 sm:py-3 sm:px-4 bg-slate-700 group-hover:text-white text-white flex items-center gap-2 rounded-3xl border-1 overflow-hidden group cursor-pointer">
                 <!-- GitHub Heroicon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <span class="absolute inset-0 w-auto h-auto bg-slate-950 transform scale-x-0 origin-left rounded-tr-full
+                rounded-br-full group-hover:scale-x-100 transition-transform duration-800 ease-in-out z-10"></span>
+                <span class="absolute inset-0 w-auto h-auto bg-slate-950 transform scale-x-0 origin-right rounded-tl-full
+                group-hover:scale-x-100 transition-transform duration-800 ease-in-out z-10"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black group-hover:text-white transition-colors duration-800 z-20" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.371.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
                 </svg>
-                Github
+                <span class="relative z-20">GitHub</span>
             </a>
-            <a href="mailto:nelson.ramosmejia@gmail.com" class="mx-2 py-2 px-2 sm:py-3 sm:px-4 bg-slate-700 text-white flex items-center gap-2 rounded-3xl hover:bg-slate-600 transition metallic-soft">
+            <a href="mailto:nelson.ramosmejia@gmail.com" target="_blank" class="relative mx-2 py-2 px-2 sm:py-3 sm:px-4 bg-slate-700 group-hover:text-white text-white flex items-center gap-2 rounded-3xl border-1 overflow-hidden group cursor-pointer">
                 <!-- Email Heroicon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <span class="absolute inset-0 w-auto h-auto bg-slate-950 transform scale-x-0 origin-left rounded-tr-full
+                rounded-br-full group-hover:scale-x-100 transition-transform duration-800 ease-in-out z-10"></span>
+                <span class="absolute inset-0 w-auto h-auto bg-slate-950 transform scale-x-0 origin-right rounded-tl-full
+                group-hover:scale-x-100 transition-transform duration-800 ease-in-out z-10"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-400 group-hover:text-white transition-colors duration-800 z-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                 </svg>
-                Email
+                <span class="relative z-20">Email</span>
             </a>
         </div>
     </section>
 
     <!-- ========== Proyectos ========== -->
 
-    <section id="proyectos" class="w-9/10 mx-auto mt-5 z-20">
-        <div class="flex flex-col items-center">
-            <h1 class="text-3xl sm:text-3xl sm:font-bold sm:mb-2 text-white">Proyectos</h1>
-            <p class="text-slate-300 text-center max-w-xl">Estos son algunos proyectos realizados durante mis cursos y carrera, donde apliqué distintas tecnologías y enfoques de desarrollo web y backend.</p>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:w-[740px] mx-auto sm:my-20">
-            <!-- Proyecto 1 -->
-            <article class="bg-slate-900 shadow-[0_0_24px_4px_rgba(56,189,248,0.18)] rounded-3xl border border-transparent flex flex-col items-center p-6 sm:col-span-1">
-                <a href="https://github.com/BrunoRamosMejia/Ludoteca-central-ids"><img src="images/ludoteca.png" alt="Proyecto Flask" class="h-44 object-contain rounded-2xl shadow-lg sm:mb-2 sm:transition-transform sm:duration-200 sm:ease-in-out sm:hover:scale-105"></a>
-                <h3 class="text-white text-xl font-bold mb-2 text-center">Ludoteca E-commerce</h3>
-                <p class="text-slate-300 text-base">Proyecto final Integrador IDS, Frontend y Backend construidos en Python, Flask. Base de datos MySQL (MariaDB), despliegue de contenedores en Docker.</p>
-            </article>
-            <!-- Proyecto 2 -->
-            <article class="bg-slate-900 shadow-[0_0_24px_4px_rgba(56,189,248,0.18)] rounded-3xl border border-transparent flex flex-col items-center p-6 sm:col-span-1">
-                <a href=""><img src="images/portafolio.png" alt="Proyecto Portafolio" class="h-44 object-contain rounded-2xl shadow-lg sm:mb-2 sm:transition-transform sm:duration-200 sm:ease-in-out sm:hover:scale-105"></a>
-                <h3 class="text-white text-xl font-bold mb-2 text-center">Portafolio Web</h3>
-                <p class="text-slate-300 text-base">Sitio web personal hecho con HTML, Tailwind y JavaScript, mostrando proyectos, tecnologías y contacto profesional.</p>
-            </article>
-            <!-- Proyecto 3 -->
-            <article class="bg-slate-900 shadow-[0_0_24px_4px_rgba(56,189,248,0.18)] rounded-3xl border border-transparent flex flex-col items-center p-6 sm:col-span-2">
-                <a href=""><img src="images/turnosmedicos.png" alt="Proyecto Docker" class="h-44 sm:h-52 object-contain rounded-2xl shadow-lg sm:mb-2 sm:transition-transform sm:duration-200 sm:ease-in-out sm:hover:scale-105"></a>
-                <h3 class="text-white text-xl font-bold mb-2 text-center">Gestion de Turnos | Full stack </h3>
-                <p class="text-slate-300 text-base">App web de Gestion de turnos. Frontend hecho con React y vite como herramienta de Empaquetado y Desarrollo. Backend construido con NodeJs y Typescritp, utilizando el framework Express para manejar las rutas y peticiones HTTP, PostgreSQL para Base de datos y para el acceso a esta TypeORM</p>
-            </article>
+    <section id="proyectos" class="relative z-20 py-15 bg-slate-900">
+        <div class="max-w-6xl mx-auto px-4 z-30">
+            <div class="mb-12 text-center">
+                <h2 class="text-4xl font-bold text-white mb-4">Proyectos</h2>
+                <p class="text-slate-300 max-w-2xl mx-auto">Estos son algunos de mis proyectos destacados, donde aplico distintas tecnologías y enfoques de desarrollo web y backend.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Tarjeta Proyecto 1 -->
+                <div class="group bg-[#101624] rounded-3xl shadow-xl overflow-hidden border border-slate-800 hover:shadow-cyan-400/20 transition-shadow duration-300 flex flex-col">
+                    <a href="#" rel="noopener noreferrer">
+                        <img src="images/ludoteca.png" alt="Ludoteca E-commerce" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    </a>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <h3 class="text-2xl font-bold text-white mb-2">Ludoteca E-commerce</h3>
+                        <p class="text-slate-300 mb-4 flex-1">Ludoteca Central es una aplicación desarrollada como proyecto final de IDS, con frontend y backend en Python/Flask y base de datos MySQL/MariaDB. Permite gestionar juegos, usuarios y préstamos, y está desplegada con Docker para asegurar un entorno estable y reproducible.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-xs">Flask</span>
+                            <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-full text-xs">Docker</span>
+                            <span class="bg-yellow-900 text-yellow-300 px-3 py-1 rounded-full text-xs">MySQL</span>
+                        </div>
+                        <div class="flex gap-3 mt-auto">
+                            <a href="https://github.com/BrunoRamosMejia/Ludoteca-central-ids" target="_blank" rel="noopener noreferrer" class="bg-slate-800 hover:bg-cyan-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 shadow-md">Repositorio</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta Proyecto 2 -->
+                 <div class="group bg-[#101624] rounded-3xl shadow-xl overflow-hidden border border-slate-800 hover:shadow-cyan-400/20 transition-shadow duration-300 flex flex-col">
+                    <a href="#" rel="noopener noreferrer">
+                        <img src="images/serviyapp.png" alt="ServiYApp" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    </a>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <h3 class="text-2xl font-bold text-white mb-2">ServiYApp</h3>
+                        <p class="text-slate-300 mb-4 flex-1">ServiYApp es una plataforma E-Commerce diseñada para conectar usuarios con servicios, ofreciendo un sistema organizado para buscar, contratar y gestionar distintos tipos de prestaciones. La aplicación integra una arquitectura robusta, manejo de usuarios, catálogo de servicios y procesos de compra eficientes.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-xs">TypeScript</span>
+                            <span class="bg-green-900 text-green-300 px-3 py-1 rounded-full text-xs">Node.js</span>
+                            <span class="bg-green-700 text-green-100 px-3 py-1 rounded-full text-xs">NestJS</span>
+                            <span class="bg-purple-900 text-purple-300 px-3 py-1 rounded-full text-xs">PostgreSQL</span>
+                        </div>
+                        <div class="flex gap-3 mt-auto">
+                            <a href="https://github.com/ServiYApp-Inc/ServiYApp-Backend" target="_blank" rel="noopener noreferrer" class="bg-slate-800 hover:bg-cyan-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 shadow-md">Repositorio</a>
+                            <a href="https://serviyapp-frontend.vercel.app/" target="_blank" rel="noopener noreferrer" class="bg-cyan-600 hover:bg-cyan-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 shadow-md">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta Proyecto 3 -->
+                <div class="group bg-[#101624] rounded-3xl shadow-xl overflow-hidden border border-slate-800 hover:shadow-cyan-400/20 transition-shadow duration-300 flex flex-col">
+                    <a href="#" rel="noopener noreferrer">
+                        <img src="images/turnosmedicos.png" alt="Gestion de Turnos" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    </a>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <h3 class="text-2xl font-bold text-white mb-2">Gestión de Turnos</h3>
+                        <p class="text-slate-300 mb-4 flex-1">App web full stack para gestión de turnos. Frontend en React/Vite, backend en Node.js/TypeScript, base de datos PostgreSQL.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-xs">React</span>
+                            <span class="bg-green-900 text-green-300 px-3 py-1 rounded-full text-xs">Node.js</span>
+                            <span class="bg-purple-900 text-purple-300 px-3 py-1 rounded-full text-xs">PostgreSQL</span>
+                        </div>
+                        <div class="flex gap-3 mt-auto">
+                            <a href="https://github.com/pi-rym/PM3-BrunoRamosMejia" target="_blank" rel="noopener noreferrer" class="bg-slate-800 hover:bg-cyan-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 shadow-md">Repositorio</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta Proyecto 4 -->
+                <div class="group bg-[#101624] rounded-3xl shadow-xl overflow-hidden border border-slate-800 hover:shadow-cyan-400/20 transition-shadow duration-300 flex flex-col">
+                    <a href="#" rel="noopener noreferrer">
+                        <img src="images/portafolio.png" alt="Portafolio Web" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300" />
+                    </a>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <h3 class="text-2xl font-bold text-white mb-2">Portafolio Web</h3>
+                        <p class="text-slate-300 mb-4 flex-1">Sitio web personal hecho con HTML, Tailwind y JavaScript, mostrando proyectos, tecnologías y contacto profesional.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-xs">Tailwind</span>
+                            <span class="bg-yellow-900 text-yellow-300 px-3 py-1 rounded-full text-xs">JavaScript</span>
+                        </div>
+                        <div class="flex gap-3 mt-auto">
+                            <a href="https://github.com/BrunoRamosMejia/Portfolio-BrunoRM" target="_blank" rel="noopener noreferrer" class="bg-slate-800 hover:bg-cyan-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 shadow-md">Repositorio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- ========== Tecnologias ========== -->
+    <section class="relative bg-slate-900 z-20">
+        <div id="tecnologias" class="flex flex-col w-full sm:w-[740px] sm:h-[900px] mx-auto relative z-20">
+            <div class="mb-6 flex flex-col items-center">
+                <h1 class="text-4xl font-bold text-white mb-2">Tecnologias</h1>
+                <p class="text-slate-300 text-center max-w-xl">Estas son algunas de las tecnologías que manejo y utilizo en mis proyectos:</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 gap-8">
+            <!-- Front -->
+                    <article class="text-white text-xl font-semibold text-center bg-[#070707] shadow-[0_0_32px_8px_rgba(0,0,0,0.45)] rounded-3xl border border-transparent">
+                    <h3>Frontend</h3>
+                    <ul class="grid grid-cols-3 gap-3">
+                        <li class="flex flex-col items-center">
+                            <img src="/images/html.png" alt="HTML" class="h-13 mb-1">
+                            <span class="text-xs">HTML</span>
+                        </li>
+                        <li class="flex flex-col items-center">
+                            <img src="/images/css.png" alt="CSS" class="h-13 mb-1">
+                            <span class="text-xs">CSS</span>
+                        </li>
+                        <li class="flex flex-col items-center">
+                            <img src="/images/js.png" alt="JavaScript" class="h-13 mb-1">
+                            <span class="text-xs">JS</span>
+                        </li>
+                        <li class="flex flex-col items-center">
+                            <img src="/images/tailwindcss.svg" alt="Tailwind" class="h-11 mb-1">
+                            <span class="text-xs">Tailwind</span>
+                        </li>
+                        <li class="flex flex-col items-center">
+                            <img src="/images/react.png" alt="React" class="h-11 mb-1">
+                            <span class="text-xs">React</span>
+                        </li>
+                        <li class="flex flex-col items-center">
 
-    <section id="tecnologias" class="flex flex-col w-9/10 sm:w-[740px] sm:h-[900px] my-8 mx-auto relative z-20">
-        <div class="mb-6 flex flex-col items-center">
-            <h1 class="text-4xl font-bold text-white mb-2">Tecnologias</h1>
-            <p class="text-slate-300 text-center max-w-xl">Estas son algunas de las tecnologías que manejo y utilizo en mis proyectos:</p>
+                        </li>
+                        <li class="flex flex-col items-center">
+
+                        </li>
+                    </ul>
+                </article>
+                <!-- Back -->
+                    <article class="text-white text-xl font-semibold text-center bg-[#070707] shadow-[0_0_32px_8px_rgba(0,0,0,0.45)] rounded-3xl border border-transparent">
+                    <h3>Backend</h3>
+                    <ul class="grid grid-cols-3 gap-3">
+                        <li class="flex flex-col items-center">
+                            <img src="/images/python.png" alt="Python" class="h-13 mb-1">
+                            <span class="text-xs">Python</span>
+                        </li>
+                        <li class="flex flex-col items-center">
+                            <img src="/images/mysql.png" alt="MySQL" class="h-13 mb-1">
+                            <span class="text-xs">MySQL</span>
+                        </li>
+                        <li class="flex flex-col items-center">
+                            <img src="/images/mariadb.png" alt="MariaDB" class="h-13 mb-1">
+                            <span class="text-xs">MariaDB</span>
+                        </li>
+                        <li class="flex flex-col items-center">
+                            <img src="/images/flask.png" alt="Flask" class="h-13 mb-1">
+                            <span class="text-xs">Flask</span>
+                        </li>
+                        <li class="flex flex-col items-center">
+
+                        </li>
+                    </ul>
+                </article>
+                <!-- Herramientas -->
+                    <article class="text-white text-xl font-semibold text-center bg-[#070707] shadow-[0_0_32px_8px_rgba(0,0,0,0.45)] rounded-3xl border border-transparent">
+                    <h3>Herramientas</h3>
+                    <ul class="grid grid-cols-3 gap-3">
+                        <li class="flex flex-col items-center">
+                            <img src="/images/git.png" alt="Git" class="h-13 mb-1">
+                            <span class="text-xs">Git</span>
+                        </li>
+                        <li class="flex flex-col items-center">
+                            <img src="/images/github.png" alt="Github" class="h-13 mb-1">
+                            <span class="text-xs">GitHub</span>
+                        </li>
+                        <li class="flex flex-col items-center">
+                            <img src="/images/bash.png" alt="Bash" class="h-13 mb-1">
+                            <span class="text-xs">Bash</span>
+                        </li>
+                        <li class="flex flex-col items-center">
+                            <img src="/images/vsc.png" alt="Visual Studio Code" class="h-13 mb-1">
+                            <span class="text-xs">Visual Studio Code</span>
+                        </li>
+                        <li class="flex flex-col items-center">
+                            <img src="images/postman.png" alt="Postman" class="h-13 mb-1">
+                            <span class="text-xs">Postman</span>
+                        </li>
+                        <li class="flex flex-col items-center">
+                            <img src="images/nodejs.png" alt="NodeJs" class="h-13 mb-1">
+                            <span class="text-xs">NodeJs</span>
+                        </li>
+                        <li class="flex flex-col items-center">
+                            <img src="images/docker.png" alt="Docker" class="h-13 mb-1">
+                            <span class="text-xs">Docker</span>
+                        </li>
+
+                    </ul>
+                </article>
+                <!-- Caja 4 -->
+                    <article class="text-white text-xl font-semibold text-center bg-[#070707] shadow-[0_0_32px_8px_rgba(0,0,0,0.45)] rounded-3xl border border-transparent">
+                    <h3>Aprendiendo</h3>
+                    <ul class="grid grid-cols-3 gap-3">
+                        <li class="flex flex-col items-center">
+                            <img src="images/nestjs.png" alt="NestJs" class="h-13 mb-1">
+                            <span class="text-xs">NestJs</span>
+                        </li>
+                        <li class="flex flex-col items-center">
+                            <img src="images/k8s.png" alt="Kubernetes" class="h-13 mb-1">
+                            <span class="text-xs">Kubernetes</span>
+                        </li>
+                        <li class="flex flex-col items-center">
+                            <img src="/images/typescript.png" alt="TypeScript" class="h-13 mb-1">
+                            <span class="text-xs">TypeScript</span>
+                        </li>
+                        <li class="flex flex-col items-center">
+                            <img src="/images/react.png" alt="PostgreSQL" class="h-13 mb-1">
+                            <span class="text-xs">PostgreSQL</span>
+                        </li>
+                        <li class="flex flex-col items-center">
+
+                        </li>
+                    </ul>
+                </article>
+            </div>    
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 gap-8">
-           <!-- Front -->
-                <article class="text-white text-xl font-semibold text-center bg-[#070707] shadow-[0_0_32px_8px_rgba(0,0,0,0.45)] rounded-3xl border border-transparent">
-                <h3>Frontend</h3>
-                <ul class="grid grid-cols-3 gap-3">
-                    <li class="flex flex-col items-center">
-                        <img src="/images/html.png" alt="HTML" class="h-13 mb-1">
-                        <span class="text-xs">HTML</span>
-                    </li>
-                    <li class="flex flex-col items-center">
-                        <img src="/images/css.png" alt="CSS" class="h-13 mb-1">
-                        <span class="text-xs">CSS</span>
-                    </li>
-                    <li class="flex flex-col items-center">
-                        <img src="/images/js.png" alt="JavaScript" class="h-13 mb-1">
-                        <span class="text-xs">JS</span>
-                    </li>
-                    <li class="flex flex-col items-center">
-                        <img src="/images/tailwindcss.svg" alt="Tailwind" class="h-11 mb-1">
-                        <span class="text-xs">Tailwind</span>
-                    </li>
-                    <li class="flex flex-col items-center">
-                        <img src="/images/react.png" alt="React" class="h-11 mb-1">
-                        <span class="text-xs">React</span>
-                    </li>
-                    <li class="flex flex-col items-center">
-
-                    </li>
-                    <li class="flex flex-col items-center">
-
-                    </li>
-                </ul>
-            </article>
-            <!-- Back -->
-                <article class="text-white text-xl font-semibold text-center bg-[#070707] shadow-[0_0_32px_8px_rgba(0,0,0,0.45)] rounded-3xl border border-transparent">
-                <h3>Backend</h3>
-                <ul class="grid grid-cols-3 gap-3">
-                    <li class="flex flex-col items-center">
-                        <img src="/images/python.png" alt="Python" class="h-13 mb-1">
-                        <span class="text-xs">Python</span>
-                    </li>
-                    <li class="flex flex-col items-center">
-                        <img src="/images/mysql.png" alt="MySQL" class="h-13 mb-1">
-                        <span class="text-xs">MySQL</span>
-                    </li>
-                    <li class="flex flex-col items-center">
-                        <img src="/images/mariadb.png" alt="MariaDB" class="h-13 mb-1">
-                        <span class="text-xs">MariaDB</span>
-                    </li>
-                    <li class="flex flex-col items-center">
-                        <img src="/images/flask.png" alt="Flask" class="h-13 mb-1">
-                        <span class="text-xs">Flask</span>
-                    </li>
-                    <li class="flex flex-col items-center">
-
-                    </li>
-                </ul>
-            </article>
-            <!-- Herramientas -->
-                <article class="text-white text-xl font-semibold text-center bg-[#070707] shadow-[0_0_32px_8px_rgba(0,0,0,0.45)] rounded-3xl border border-transparent">
-                <h3>Herramientas</h3>
-                <ul class="grid grid-cols-3 gap-3">
-                    <li class="flex flex-col items-center">
-                        <img src="/images/git.png" alt="Git" class="h-13 mb-1">
-                        <span class="text-xs">Git</span>
-                    </li>
-                    <li class="flex flex-col items-center">
-                        <img src="/images/github.png" alt="Github" class="h-13 mb-1">
-                        <span class="text-xs">GitHub</span>
-                    </li>
-                    <li class="flex flex-col items-center">
-                        <img src="/images/bash.png" alt="Bash" class="h-13 mb-1">
-                        <span class="text-xs">Bash</span>
-                    </li>
-                    <li class="flex flex-col items-center">
-                        <img src="/images/vsc.png" alt="Visual Studio Code" class="h-13 mb-1">
-                        <span class="text-xs">Visual Studio Code</span>
-                    </li>
-                    <li class="flex flex-col items-center">
-                        <img src="images/postman.png" alt="Postman" class="h-13 mb-1">
-                        <span class="text-xs">Postman</span>
-                    </li>
-                    <li class="flex flex-col items-center">
-                        <img src="images/nodejs.png" alt="NodeJs" class="h-13 mb-1">
-                        <span class="text-xs">NodeJs</span>
-                    </li>
-                    <li class="flex flex-col items-center">
-                        <img src="images/docker.png" alt="Docker" class="h-13 mb-1">
-                        <span class="text-xs">Docker</span>
-                    </li>
-
-                </ul>
-            </article>
-            <!-- Caja 4 -->
-                <article class="text-white text-xl font-semibold text-center bg-[#070707] shadow-[0_0_32px_8px_rgba(0,0,0,0.45)] rounded-3xl border border-transparent">
-                <h3>Aprendiendo</h3>
-                <ul class="grid grid-cols-3 gap-3">
-                    <li class="flex flex-col items-center">
-                        <img src="images/nestjs.png" alt="NestJs" class="h-13 mb-1">
-                        <span class="text-xs">NestJs</span>
-                    </li>
-                    <li class="flex flex-col items-center">
-                        <img src="images/k8s.png" alt="Kubernetes" class="h-13 mb-1">
-                        <span class="text-xs">Kubernetes</span>
-                    </li>
-                    <li class="flex flex-col items-center">
-                        <img src="/images/typescript.png" alt="TypeScript" class="h-13 mb-1">
-                        <span class="text-xs">TypeScript</span>
-                    </li>
-                    <li class="flex flex-col items-center">
-                        <img src="/images/react.png" alt="PostgreSQL" class="h-13 mb-1">
-                        <span class="text-xs">PostgreSQL</span>
-                    </li>
-                    <li class="flex flex-col items-center">
-
-                    </li>
-                </ul>
-            </article>
-        </div>    
     </section>
 
     <!-- ========== Footer ========== -->
